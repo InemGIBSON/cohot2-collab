@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Collaboration Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Internal CSS for simplicity -->
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #0f172a;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--secondary);
+      padding: 0.7rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .team-member {
+      border-left: 4px solid var(--primary);
+      padding-left: 1rem;
+    }
+
+    footer {
+      background: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🚀 Team Collaboration Project</h1>
+    <p>Learning Git & GitHub the practical way</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#team">Team</a>
+    <a href="#features">Features</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h2>About This Project</h2>
+      <p>
+        This project is used to demonstrate real-world collaboration using
+        <strong>Git and GitHub</strong>. Each team member works on a separate
+        feature using branches and merges their work safely.
+      </p>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="card">
+      <h2>Our Team</h2>
+
+      <div class="team">
+        <div class="team-member">
+          <h4>Student A</h4>
+          <p>Header & UI Designer</p>
+        </div>
+
+        <div class="team-member">
+          <h4>Student B</h4>
+          <p>Content & About Section</p>
+        </div>
+
+        <div class="team-member">
+          <h4>Student C</h4>
+          <p>Footer & Enhancements</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="card">
+      <h2>Project Features</h2>
+      <ul>
+        <li>✔ Git branching and merging</li>
+        <li>✔ Team collaboration</li>
+        <li>✔ Clean and responsive UI</li>
+        <li>✔ Easy to extend with new features</li>
+      </ul>
+
+      <button onclick="alert('GitHub Collaboration is Awesome!')">
+        Click Me
+      </button>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Team Project | Powered by Git & GitHub</p>
+  </footer>
+
+</body>
+</html>
